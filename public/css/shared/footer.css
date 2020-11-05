@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    padding: 20px;
+}
+
+.footer__left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__right {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__right i {
+    font-size: 30px;
+    margin: 0 20px;
+    transition: .2s;
+}
+
+.footer__right a {
+    color: #000;
+}
+
+.footer__right a:hover:nth-child(1) i {
+    color: #bc2a8d;
+    transform: scale(1.1);
+}
+
+.footer__right a:hover:nth-child(2) i {
+    color: #3772b6;
+    transform: scale(1.1);
+}
