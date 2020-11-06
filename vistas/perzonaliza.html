@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/perzonaliza.css">
+    <link rel="stylesheet" href="../public/css/shared/navbar.css">
+    <link rel="stylesheet" href="../public/css/shared/footer.css">
+    <title>PERZONALIZA</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img class="icon" src="../public/images/logo.webp" alt="Neon House Led">
+        </div>
+        <div class="navigation">
+            <div class="item">TIENDA VIRTUAL</div>
+            <div class="item">PERSONALIZA</div>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="contenedor">
+            <div class="titulo">
+                <h1>PERSONALIZA TU DISEÑO</h1>
+            </div>
+            <form action="" class="form">
+                <ul>
+                    <li><label for="name">¿Qué es lo que <br/> deseas perzonalizar?</label>
+                        <select name="name" id="">
+                            <option value="0">Logo / Frase / Otros</option>
+                            <option value="logo">Logo</option>
+                            <option value="frase">Frase</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </li>
+                    <li><label for="medida">Medidas</label> <input type="text" name="medida" required /></li>
+                    <li><label for="message">Notas</label> <textarea name="message" cols="40" rows="6" placeholder="Adjunta tu diseño" required></textarea></li>
+                </ul>
+                <button type="submit" class="button">ENVIAR</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
