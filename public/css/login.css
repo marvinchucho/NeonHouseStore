@@ -8,17 +8,17 @@
 
 @font-face {
     font-family: Comfortaa-Bold;
-    src: url(../../fuentes/Comfortaa-Bold.ttf);
+    src: url(../fuentes/Comfortaa-Bold.ttf);
 }
 
 @font-face {
     font-family: Comfortaa-Light;
-    src: url(../../fuentes/Comfortaa-Light.ttf);
+    src: url(../fuentes/Comfortaa-Light.ttf);
 }
 
 @font-face {
     font-family: Comfortaa-Regular;
-    src: url(../../fuentes/Comfortaa-Regular.ttf);
+    src: url(../fuentes/Comfortaa-Regular.ttf);
 }
 
 .main {
