@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    min-height: 630px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .nosotros {
+    width: 800px;
+    margin: auto;
+    min-height: 300px;
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.main .nosotros p {
+    color: white;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.main .nosotros p span:nth-child(1) {
+    color: red;
+}
+
+.main .nosotros p span:nth-child(2) {
+    color: yellow;
+}
+
+.main .nosotros p span:nth-child(3) {
+    color: green;
+}
+
+.main .nosotros p span:nth-child(4) {
+    color: blue;
+}

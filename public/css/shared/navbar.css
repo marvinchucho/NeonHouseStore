@@ -1,48 +1,196 @@
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    position: fixed;
+    z-index: 2;
     width: 100%;
-    height: 120px;
-    display: flex;
-    padding: 0 40px;
-    justify-content: space-between;
+    padding: 0 50px;
 }
 
-.navbar .logo,
-.navbar .icons,
-.navbar .navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar .navigation .item {
-    padding: 20px;
-    background-color: #F7B1E8;
-    border-radius: 40px 0 0 40px;
-    color: #fff;
-    transition: .4s ease;
+.header .navbar .toggle {
+    position: absolute;
+    width: 2rem;
+    height: 1.4rem;
+    top: 2rem;
+    right: 4rem;
+    z-index: 2;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 175px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.navbar .navigation .item:nth-child(2) {
-    border-radius: 0 40px 40px 0;
+.header .navbar .toggle-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    width: 1.6rem;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.navbar .navigation .item:hover {
-    background-color: #FF85ED;
-    color: #B010FD;
+.header .navbar .toggle-btn::before {
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    width: 2rem;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.navbar .icons a {
-    color: #B010FD;
+.header .navbar .toggle-btn::after {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    width: 1.2rem;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.navbar .icons a i {
-    font-size: 25px;
-    display: flex;
-    align-items: center;
+.icons {
+    position: absolute;
+    top: 28px;
+    right: 110px;
+}
+
+.icons a {
     margin: 0 10px;
+}
+
+.icons a:hover i {
+    color: #ff652f;
+    transition: .3s;
+}
+
+.icons a i {
+    font-size: 25px;
+    color: #fff;
+    transition: .3s;
+}
+
+.header .navbar .toggle-btn.open {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    background: transparent;
+}
+
+.header .navbar .toggle-btn.open::before {
+    -webkit-transform: rotate(45deg) translate(5px, 8px);
+    transform: rotate(45deg) translate(5px, 8px);
+    background: #fff;
+}
+
+.header .navbar .toggle-btn.open::after {
+    width: 2rem;
+    -webkit-transform: rotate(-45deg) translate(3px, -6px);
+    transform: rotate(-45deg) translate(3px, -6px);
+    background: #fff;
+}
+
+.header .navbar .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 1;
+    visibility: hidden;
+}
+
+.header .navbar .menu.open {
+    visibility: visible;
+}
+
+.header .navbar .menu-list {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    list-style: none;
+    list-style-type: none;
+    padding-right: 1rem;
+    background: #000;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .navbar .menu-list.open {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.header .navbar .menu-item {
+    -webkit-transform: translateX(100vw);
+    transform: translateX(100vw);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .navbar .menu-item.open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.header .navbar .menu-link {
+    display: inline-block;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: inherit;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .navbar .menu-link:hover {
+    color: #ff652f;
+}
+
+.header .navbar .menu .menu-list .menu-item:nth-child(1) {
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.header .navbar .menu .menu-list .menu-item:nth-child(2) {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+.header .navbar .menu .menu-list .menu-item:nth-child(3) {
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s;
+}
+
+.header .navbar .menu .menu-list .menu-item:nth-child(4) {
+    -webkit-transition-delay: 0.55s;
+    transition-delay: 0.55s;
+}
+
+.header .navbar .brand img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    z-index: 1;
 }
