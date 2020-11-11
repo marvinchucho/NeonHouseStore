@@ -12,106 +12,81 @@
 /*---------CONTENIDO CENTRAL---------*/
 
 .main {
-    margin-top: 20px;
+    width: 100%;
+    min-height: 600px;
+    padding: 70px 20px;
+    background: #000;
+}
+
+.main .principal {
     width: 80%;
     margin: auto;
-    min-height: 600px;
-    padding: 0 20px;
-    display: flex;
 }
 
-.main .sidebar {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
-    border-radius: 5px;
-    width: 300px;
-    height: 500px;
-    background: #fff;
-    margin-right: 20px;
-}
-
-.main .sidebar h2 {
-    text-align: center;
+.main .principal .titulo {
+    width: 100%;
     margin: 20px 0;
 }
 
-.main .sidebar ul {
+.main .principal .titulo img {
     width: 100%;
-    margin: 0 20px;
+    transform: scale(0.8);
 }
 
-.main .sidebar ul li {
-    margin: 10px 0;
-}
-
-.main .sidebar ul li i {
-    font-size: 20px;
-    width: 25px;
-}
-
-.main .sidebar ul li a {
-    font-size: 17px;
-    color: #000;
-    transition: .3s ease;
-}
-
-.main .sidebar ul li:hover a {
-    font-size: 18px;
-    transition: .3s ease;
-}
-
-.main .container {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
-    border-radius: 5px;
+.main .principal .contenido {
     width: 100%;
-    height: 100%;
-    background: #fff;
-    padding: 30px;
-}
-
-.main .container__title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.main .container__cards {
-    width: 100%;
+    min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.main .container__cards .card {
-    width: 200px;
-    height: 200px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 10px;
+.main .principal .contenido .card {
+    width: 250px;
+    height: 300px;
+    margin: 0px 20px;
 }
 
-.main .container .card__img {
+.main .principal .contenido .card__image {
     width: 100%;
-    height: 150px;
+    height: 70%;
+    position: relative;
     overflow: hidden;
+    border-radius: 20px;
 }
 
-.main .container .card:hover img {
-    transform: scale(1.1) rotate(1deg);
-}
-
-.main .container .card__img img {
+.main .principal .contenido .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: .4s ease;
+    position: relative;
+    transition: 0.3s;
 }
 
-.main .container .card__text {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main .principal .contenido .card__image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.0);
+    transition: 0.3s;
+}
+
+.main .principal .contenido .card__image:hover img {
+    transform: scale(1.1) rotate(1deg);
+    transition: 0.3;
+}
+
+.main .principal .contenido .card__image:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transition: .3s;
 }

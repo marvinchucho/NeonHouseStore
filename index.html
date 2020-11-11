@@ -11,40 +11,87 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img class="icon" src="public/images/logo.webp" alt="Neon House Led">
-        </div>
-
-        <div class="icons">
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            <a href="vistas/login.html"><i class="fas fa-user"></i></a>
-        </div>
-        
-    </nav>
-
-    <main class="main">
-        <div class="contenedor">
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="brand">
+                    <img src="./public/images/logo.webp" alt="Neon House Led">
+                </div>
+                <div class="toggle">
+                    <span class="toggle-btn"></span>
+                </div>
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="/" class="menu-link">Inicio</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./vistas/nosotros.html" class="menu-link">Nosotros</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./vistas/tienda.html" class="menu-link">Tienda</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./vistas/perzonaliza.html" class="menu-link">Personaliza</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./contacto.html" class="menu-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="/vistas/login.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="espacio " style="height: 80px; background-color: #000;"></div>
+    <main class="main ">
+        <div class="contenedor ">
             <br>
-            <div class="titulo">
+            <div class="titulo ">
                 <h1>REGISTRATE PARA VER NUESTROS DISEÑOS EXCLUSIVOS</h1>
             </div>
             <br>
-            <form action="" class="form">
+            <form action=" " class="form ">
                 <ul>
-                    <li><label for="name">NOMBRE</label> <input type="text" name="name" placeholder="Tu nombre" required /></li>
-                    <li><label for="surname">APELLIDOS</label> <input type="text" name="surname" placeholder="Tus apellidos" required /></li>
-                    <li><label for="email">CORREO</label> <input type="email" name="email" placeholder="Tu correo" required /></li>
-                    <li><label for="pass">CONTRASEÑA</label> <input type="password" name="password" required /></li>
+                    <li><label for="name ">NOMBRE</label> <input type="text " name="name " placeholder="Tu nombre " required /></li>
+                    <li><label for="surname ">APELLIDOS</label> <input type="text " name="surname " placeholder="Tus apellidos " required /></li>
+                    <li><label for="email ">CORREO</label> <input type="email " name="email " placeholder="Tu correo " required /></li>
+                    <li><label for="pass ">CONTRASEÑA</label> <input type="password " name="password " required /></li>
                 </ul>
                 <br>
-                <button type="submit" class="button">Enviar</button>
+                <button type="submit " class="button ">Enviar</button>
             </form>
         </div>
     </main>
 
 
-    <script src="https://kit.fontawesome.com/022b0abea9.js" crossorigin="anonymous"></script>
+
+    <footer class="footer ">
+        <div class="footer__empresa ">
+            <div class="nosotros ">
+                <h3>Nosotros</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium delectus vel dignissimos. Quo, at? Pariatur et cum maiores incidunt!.</p>
+                <div class="sociales ">
+                    <a href="# "><i class="fab fa-facebook "></i></a>
+                    <a href="# "><i class="fab fa-instagram "></i></a>
+                    <a href="# "><i class="fab fa-youtube "></i></a>
+                </div>
+            </div>
+            <div class="contacto ">
+                <h3>Contacto</h3>
+                <p>Direccion de la empresa lt10</p>
+                <p><i class="fas fa-phone "></i>(01)987-1234</p>
+                <p><i class="far fa-envelope "></i>correo@gmail.com</p>
+                <p><i class="fas fa-link "></i>www.gruincasas.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/022b0abea9.js " crossorigin="anonymous "></script>
+    <script src="public/js/navbar.js"></script>
 </body>
 
 </html>
