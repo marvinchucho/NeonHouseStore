@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+
+.main .tarjeta {
+    display: flex;
+    width: 60%;
+    min-height: 600px;
+    border-radius: 25px;
+    background: #0C0A0F;
+    box-shadow: 0px 0px 20px rgba(89, 68, 228, 0.9);
+}
+
+.main .tarjeta__imagen,
+.main .tarjeta__detalle {
+    width: 50%;
+}
+
+.main .tarjeta__imagen {
+    padding: 40px;
+}
+
+.main .tarjeta__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main .tarjeta__detalle {
+    padding: 40px 20px 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .tarjeta__detalle .titulo {
+    margin: 10px 0;
+}
+
+.main .tarjeta__detalle .titulo h2 {
+    font-size: 30px;
+}
+
+.main .tarjeta__detalle .eleccion {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .tarjeta__detalle .eleccion span {
+    margin: 10px 0 0 0;
+}
+
+.main .tarjeta__detalle .eleccion input {
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(106, 90, 205, 0.3);
+    border: 1px solid slateblue;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 5px;
+    margin: 10px 0;
+    background: transparent;
+}
+
+.main .tarjeta__detalle .botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.main .tarjeta__detalle .botones button {
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: none;
+    border-radius: 5px;
+    color: slateblue;
+    background: none;
+    border: 1px solid slateblue;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    box-shadow: 0px 0px 20px rgba(106, 90, 205, 0.3);
+    transition: 0.3s;
+}
+
+.main .tarjeta__detalle .botones button:nth-child(1):hover,
+.main .tarjeta__detalle .botones button:nth-child(2):hover {
+    background: rgb(106, 90, 205);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.main .volver {
+    font-size: 30px;
+    margin: 20px 0;
+    position: absolute;
+    bottom: 20px;
+    transition: .3s;
+}
+
+.main .volver:hover {
+    font-size: 35px;
+}

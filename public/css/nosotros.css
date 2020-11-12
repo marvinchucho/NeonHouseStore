@@ -8,7 +8,7 @@
 
 .main {
     width: 100%;
-    min-height: 630px;
+    min-height: 641px;
     background: #000;
     display: flex;
     justify-content: center;
@@ -16,13 +16,13 @@
 }
 
 .main .nosotros {
+    position: relative;
     width: 800px;
     margin: auto;
-    min-height: 300px;
-    border: 1px solid white;
     border-radius: 15px;
     overflow: hidden;
     padding: 30px;
+    background: #0C0A0F;
 }
 
 .main .nosotros p {
