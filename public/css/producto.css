@@ -21,7 +21,7 @@
 .main .tarjeta {
     display: flex;
     width: 60%;
-    min-height: 600px;
+    min-height: 500px;
     border-radius: 25px;
     background: #0C0A0F;
     box-shadow: 0px 0px 20px rgba(89, 68, 228, 0.9);
@@ -110,10 +110,14 @@
 }
 
 .main .volver {
+    /**/
+    left: 57%;
+    /**/
     font-size: 30px;
     margin: 20px 0;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
+    /*bottom: 20px;*/
     transition: .3s;
 }
 

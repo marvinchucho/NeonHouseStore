@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*---------CONTENIDO CENTRAL---------*/
+
+.main {
+    width: 100%;
+    min-height: 600px;
+    padding: 70px 20px;
+    background: #000;
+}
+
+.main .principal {
+    width: 80%;
+    margin: auto;
+}
+
+.main .principal .titulo {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.main .principal .titulo img {
+    width: 100%;
+    transform: scale(0.8);
+}
+
+.main .principal .contenido {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .principal .contenido .card {
+    width: 250px;
+    height: 300px;
+    margin: 0px 20px;
+}
+
+.main .principal .contenido .card__image {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.main .principal .contenido .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: 0.3s;
+}
+
+.main .principal .contenido .card__image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.0);
+    transition: 0.3s;
+}
+
+.main .principal .contenido .card__image:hover img {
+    transform: scale(1.1) rotate(1deg);
+    transition: 0.3;
+}
+
+.main .principal .contenido .card__image:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transition: .3s;
+}
