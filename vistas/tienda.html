@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../public/css/tienda.css">
     <link rel="stylesheet" href="../public/css/shared/navbar.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
 </head>
 
 <body>
@@ -40,8 +41,9 @@
                     </ul>
                 </div>
                 <div class="icons">
-                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" data-pushbar-target="pushbar-carrito"><i class="fas fa-shopping-cart"></i></a>
                     <a href="login.html"><i class="fas fa-user"></i></a>
+                    <span>NOMBRE</span>
                 </div>
             </div>
         </nav>
@@ -199,9 +201,32 @@
         </div>
     </footer>
 
+    <!--SIDEBAR CARRITO-->
 
+    <div data-pushbar-id="pushbar-carrito" class="pushbar-carrito" data-pushbar-direction="right">
+        <h2>CARRITO DE COMPRA</h2>
+        <div class="producto">
+            <img src="../public/images/card.png">
+            <div class="detalle">
+                <p>precio: S/100.00</p>
+                <p>cantidad:</p>
+                <input type="number" value="1">
+            </div>
+        </div>
 
+        <div class="botones">
+            <a class="btn-carrito" href="#">COMPRAR AHORA</a>
+        </div>
+    </div>
+    <!--SIDEBAR CARRITO-->
 
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
     <script src="https://kit.fontawesome.com/022b0abea9.js" crossorigin="anonymous"></script>
     <script src="../public/js/navbar.js"></script>
 </body>
