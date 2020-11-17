@@ -1,182 +1,147 @@
-@font-face {
-    font-family: Comfortaa-Bold;
-    src: url(../fuentes/Comfortaa-Bold.ttf);
-}
-
-@font-face {
-    font-family: Comfortaa-Light;
-    src: url(../fuentes/Comfortaa-Light.ttf);
-}
-
-@font-face {
-    font-family: Comfortaa-Regular;
-    src: url(../fuentes/Comfortaa-Regular.ttf);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-
-body {
-    background: #0C0A0F;
-}
-
-main {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.box {
-    position: relative;
-    width: 850px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0C0A0F;
-}
-
-.box:before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: #fff;
-    z-index: -1;
-}
-
-.box:after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: #fff;
-    z-index: -2;
-    filter: blur(40px);
-}
-
-.box:before,
-.box:after {
-    background: linear-gradient(235deg, #89ff00, #0C0A0F, #00bcd4);
-}
-
-.form-container {
-    padding: 20px;
-    box-sizing: border-box;
-    color: #fff;
-}
-
-.title {
-    top: 15%;
-    width: 100%;
-    left: 55%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0 20px;
-    font-size: 3em;
-    color: #8affff;
-    text-shadow: 0 0 20px #11fefe;
-    font-family: Comfortaa-Bold;
-}
-
-.title:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-    z-index: -1;
-    color: #11fefe;
-    filter: blur(15px);
-}
-
-.title :after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 100%;
-    background: #11fefe;
-    z-index: -2;
-    opacity: .5;
-    filter: blur(40px);
-}
-
-.form ul {
-    list-style: none;
-    list-style-position: outside;
-    margin: 0px;
-    padding: 0px;
-}
-
-.form li {
-    padding: 12px;
-    position: relative;
-}
-
-.form label {
-    width: 450px;
-    height: 60px;
-    margin-top: 3px;
-    font-size: 25px;
-    float: left;
-    padding: 10px;
-    font-family: Comfortaa-Regular;
-}
-
-.form input {
-    width: 270px;
-    height: 40px;
-    margin-top: 15px;
-    padding: 5px 8px;
-    outline: 0;
-    border: 0 !important;
-    border-radius: 8px;
-    font-family: Comfortaa-Regular;
-}
-
-.form textarea {
-    margin-top: 15px;
-    padding: 8px;
-    width: 270px;
-    outline: 0;
-    border: 0 !important;
-    border-radius: 8px;
-    font-family: Comfortaa-Regular;
-}
-
-.button {
-    float: right;
-    padding-top: 15px;
-    padding-right: 45px;
-    border: none;
-    color: #46fd13;
-    font-size: 50px;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    font-family: Comfortaa-Regular;
-    text-shadow: 0 0 10px #fff;
-}
-
-@media (min-width: 755px) and (max-width:780px) {
-    .form li {
-        padding: 0px;
+    @font-face {
+        font-family: Comfortaa-Bold;
+        src: url(../fuentes/Comfortaa-Bold.ttf);
     }
-}
+    
+    @font-face {
+        font-family: Comfortaa-Light;
+        src: url(../fuentes/Comfortaa-Light.ttf);
+    }
+    
+    @font-face {
+        font-family: Comfortaa-Regular;
+        src: url(../fuentes/Comfortaa-Regular.ttf);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    body {
+        background: #181818;
+    }
+    
+    main {
+        color: #fff;
+        line-height: 1.6;
+        padding: 0 1.5em;
+    }
+    
+    .content {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5em;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 3em;
+        font-family: Comfortaa-Regular;
+        text-shadow: 0 0 20px #ff005b;
+    }
+    
+    .contact-wrapper {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0);
+    }
+    
+    .contact-wrapper>* {
+        padding: 1em;
+    }
+    
+    .contact-form {
+        background: rgb(14, 14, 14);
+    }
+    
+    .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .contact-form form .block {
+        grid-column: 1 / 3;
+    }
+    
+    .contact-form form p {
+        margin: 0;
+        padding: 1em;
+    }
+    
+    .contact-form form button,
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: #545454;
+        color: #fff;
+        font-family: Comfortaa-Light;
+    }
+    
+    .contact-form label {
+        font-family: Comfortaa-Light;
+    }
+    
+    .contact-form form button {
+        background: #b70e21;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+    }
+    
+    .contact-form form button:hover,
+    .contact-form form button:focus {
+        background: #d63031;
+        color: #000;
+        transition: background-color 1s ease-out;
+        outline: 0;
+    }
+    
+    .contact-info {
+        background: rgb(14, 14, 14);
+    }
+    
+    .contact-info h4 {
+        font-size: 1.5em;
+    }
+    
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: center;
+        font-family: Comfortaa-Light;
+        margin: 0 0 1rem 0;
+    }
+    
+    .contact-info ul {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .contact-info ul li {
+        padding: .3em;
+        font-family: 'Comfortaa-Light';
+    }
+    
+    @media (min-width: 700px) {
+        main {
+            padding: 0 4em;
+        }
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .contact-wrapper>* {
+            padding: 2em;
+        }
+        .contact-info h4,
+        .contact-info ul,
+        .contact-info p {
+            padding: 1em;
+            text-align: left;
+        }
+    }

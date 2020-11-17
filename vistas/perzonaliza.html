@@ -11,62 +11,57 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="brand">
-                    <img src="../public/images/logo.webp" alt="Neon House Led">
-                </div>
-                <div class="toggle">
-                    <span class="toggle-btn"></span>
-                </div>
-                <div class="menu">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="../index.html" class="menu-link">Inicio</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="nosotros.html" class="menu-link">Nosotros</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="tienda.html" class="menu-link">Tienda</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="perzonaliza.html" class="menu-link">Personaliza</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="contacto.html" class="menu-link">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="icons">
-                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="login.html"><i class="fas fa-user"></i></a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="espacio " style="height: 100px;"></div>
+    <nav>
+        <div class="logo"><img src="../public/images/logo.webp"></div>
+        <ul>
+            <a href="#">
+                <li></li>Inicio</a>
+            <a href="./nosotros.html">
+                <li></li>Nosotros</a>
+            <a href="#">
+                <li></li>Tienda</a>
+            <a href="#">
+                <li></li>Personaliza</a>
+            <a href="./contacto.html">
+                <li></li>Contacto</a>
+        </ul>
+        <div class="icons">
+            <a href="#" data-pushbar-target="pushbar-carrito"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html"><i class="fas fa-user"></i></a>
+            <span>NOMBRE</span>
+        </div>
+    </nav>
+    <div class="espacio " style="height: 80px; background-color: #000;"></div>
     <main>
-        <div class="box">
-            <div class="form-container">
-                <h1 class="title" data-text="PERSONALIZA TU DISEÑO">PERSONALIZA TU DISEÑO</h1>
-                <div class="espacio" style="height: 100px;"></div>
-                <form action="" class="form">
-                    <ul>
-                        <li><label for="name">¿Qué es lo que <br/> deseas perzonalizar?</label>
-                            <select name="name" id="">
+        <div class="content">
+            <h1 class="title">CONTACTANOS</h1>
+
+            <div class="contact-wrapper">
+
+                <div class="contact-form">
+                    <form action="">
+                        <p>
+                            <label for="opciones">¿Qué es lo que desea personalizar?</label>
+                            <select name="" id="opciones">
                                 <option value="0">Logo / Frase / Otros</option>
-                                <option value="logo">Logo</option>
-                                <option value="frase">Frase</option>
-                                <option value="otros">Otros</option>
+                                <option value="">Logo</option>
+                                <option value="">Frases</option>
+                                <option value="">Otros</option>
                             </select>
-                        </li>
-                        <li><label for="medida">Medidas</label> <input type="text" name="medida" required /></li>
-                        <li><label for="message">Notas</label> <textarea name="message" cols="40" rows="6" placeholder="Adjunta tu diseño" required></textarea></li>
-                    </ul>
-                    <button type="submit" class="button">ENVIAR</button>
-                </form>
+                        </p>
+                        <p>
+                            <label for="medida">Medidas</label>
+                            <input type="text" name="medida" id="medida">
+                        </p>
+                        <p class="block">
+                            <label for="notas">Notas</label>
+                            <textarea name="notas" id="notas" rows="5"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
