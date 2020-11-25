@@ -39,16 +39,18 @@
                 <div class="espacio" style="height: 100px;"></div>
                 <form action="" class="form">
                     <ul>
-                        <li><label for="name">¿Qué es lo que <br/> deseas perzonalizar?</label>
-                            <select name="name" id="">
+                        <li><label for="name">¿Qué es lo que <br /> deseas perzonalizar?</label>
+                            <select name="name" id="objeto">
                                 <option value="0">Logo / Frase / Otros</option>
-                                <option value="logo">Logo</option>
-                                <option value="frase">Frase</option>
+                                <option value="imagen">Imagen</option>
+                                <option value="frases">Frases</option>
                                 <option value="otros">Otros</option>
                             </select>
                         </li>
-                        <li><label for="medida">Medidas</label> <input type="text" name="medida" required /></li>
-                        <li><label for="message">Notas</label> <textarea name="message" cols="40" rows="6" placeholder="Adjunta tu diseño" required></textarea></li>
+                        <li><label for="correo">Correo:</label> <input type="email" name="correo" required /></li>
+                        <li><label for="medida">Medidas:</label> <input type="text" name="medida" required /></li>
+                        <li id="foto"><label for="imagen">Foto: </label> <input type="file" name="imagen" required /></li>
+                        <li><label for="mensaje">Descripción:</label> <textarea name="mensaje" cols="40" rows="6" placeholder="Adjunta tu diseño" required></textarea></li>
                     </ul>
                     <button type="submit" class="button">ENVIAR</button>
                 </form>
@@ -75,8 +77,11 @@
             </div>
         </div>
     </footer>
-    <script src="../public/js/navbar.js"></script>
+
     <script src="https://kit.fontawesome.com/022b0abea9.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../public/js/personalizar.js"></script>
 </body>
 
 </html>
