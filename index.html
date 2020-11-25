@@ -4,69 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/index.css">
+    <title>Inicio</title>
     <link rel="stylesheet" href="public/css/shared/navbar.css">
     <link rel="stylesheet" href="public/css/shared/footer.css">
-    <title>Registrate</title>
+    <link rel="stylesheet" href="public/css/index.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="brand">
-                    <img src="public/images/logo.webp" alt="Neon House Led">
-                </div>
-                <div class="toggle">
-                    <span class="toggle-btn"></span>
-                </div>
-                <div class="menu">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="index.html" class="menu-link">Inicio</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="vistas/nosotros.html" class="menu-link">Nosotros</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="vistas/tienda.html" class="menu-link">Tienda</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="vistas/perzonaliza.html" class="menu-link">Personaliza</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="vistas/contacto.html" class="menu-link">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="icons">
-                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="vistas/login.html"><i class="fas fa-user"></i></a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="espacio" style="height: 80px; background-color: #000;"></div>
-    <main class="main">
-        <div class="box">
-            <div class="contenedor">
-                <br>
-                <div class="titulo">
-                    <h1>REGISTRATE PARA VER NUESTROS DISEÑOS EXCLUSIVOS</h1>
-                </div>
-                <br>
-                <form action=" " class="form ">
-                    <ul>
-                        <li><label for="name">NOMBRE: </label> <input type="text" name="name" placeholder="Tu nombre" required /></li>
-                        <li><label for="surname ">APELLIDOS: </label> <input type="text" name="surname" placeholder="Tus apellidos" required /></li>
-                        <li><label for="email ">CORREO: </label> <input type="email" name="email" placeholder="Tu correo" required /></li>
-                        <li><label for="pass ">CONTRASEÑA: </label> <input type="password " name="password" required /></li>
-                    </ul>
-                    <br>
-                    <button type="submit " class="button ">Enviar</button>
-                </form>
-            </div>
+    <nav>
+        <div class="logo"><img src="public/images/logo.webp"></div>
+        <ul>
+            <a class="active" href="index.html">
+                <li></li>Inicio
+            </a>
+            <a href="vistas/tienda.html">
+                <li></li>Tienda
+            </a>
+            <a href="vistas/personaliza.html">
+                <li></li>Personalizar
+            </a>
+            <a href="vistas/registrar.html">
+                <li></li>Registrarse
+            </a>
+            <a href="vistas/contacto.html">
+                <li></li>Contacto
+            </a>
+        </ul>
+        <div class="icons">
+            <a href="#" data-pushbar-target="pushbar-carrito"><i class="fas fa-shopping-cart"></i></a>
+            <a href="vistas/login.html"><i class="fas fa-user"></i></a>
+            <span>NOMBRE</span>
         </div>
+    </nav>
+    <div class="espacio " style="height: 10px; background-color: #000;"></div>
+
+    <main class="main">
+        <div class="video">
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/TmKh7lAwnBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </div>
+
+        <div class="nosotros">
+            <h2>MISIÓN</h2>
+            <img src="public/images/index/mision.png" alt="misión">
+            <p>
+                Brindar a nuestro clientes la mejor experiencia de compra virtual y además, ofrecerles un servicio totalmente personalizado, desde el trato hasta el producto a elección. De tal manera que consolidemos a Neon Leon Store como una empresa referente de luces led a nivel nacional ofreciendo experiencias que generen valor y tendencia en la decoración del hogar.
+            </p>
+            
+        </div>
+
+        <div class="nosotros">
+            <h2>VISIÓN</h2>
+            <img src="public/images/index/vision.png" alt="visión">
+            <p>
+                Posicionarnos como una empresa nacional reconocida en su categoría, a través de los diseños personalizados que ofrecemos.
+            </p>
+            
+        </div>
+
+        <div class="nosotros">
+            <h2>VALORES</h2>
+            <img src="public/images/index/valores.png" alt="valores">
+            <p>
+                Responsabilidad, exactitud, compromiso, rapidez, veracidad, calidad, innovación y empatía, cualidades las cuales nos representan como una marca transparente y capaz de ofrecer un servicio A1 a todos nuestros clientes y futuros clientes.
+            </p>
+            
+        </div>
+
+
     </main>
 
 
@@ -91,9 +95,8 @@
             </div>
         </div>
     </footer>
-
     <script src="https://kit.fontawesome.com/022b0abea9.js " crossorigin="anonymous "></script>
-    <script src="public/js/navbar.js"></script>
+
 </body>
 
 </html>
