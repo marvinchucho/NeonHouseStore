@@ -32,6 +32,11 @@ main {
     padding: 0 1.5em;
 }
 
+.main {
+    min-height: calc(100vh - 230px);
+    padding-top: 80px;
+}
+
 .content {
     max-width: 950px;
     margin-left: auto;
@@ -108,11 +113,9 @@ main {
     box-shadow: 0 2px 5px 0 #3acfd5 inset, 0 2px 5px 0 #3a4ed5, 0 5px 50px 0 #3a4ed5 inset, 0 5px 50px 0 #3a4ed5;
 }
 
-
-/*Glowing effect*/
-
 .contact-wrapper {
     position: relative;
+    margin-top: 20px;
 }
 
 .contact-wrapper:before {

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/registrar.css">
+    <link rel="stylesheet" href="../public/css/shared/navbar.css">
+    <link rel="stylesheet" href="../public/css/shared/footer.css">
+    <title>Regístrate</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="../public/images/logo.webp"></div>
+        <ul>
+            <a href="../index.html">
+                <li></li>Inicio
+            </a>
+            <a href="tienda.html">
+                <li></li>Tienda
+            </a>
+            <a href="personaliza.html">
+                <li></li>Personalizar
+            </a>
+            <a class="active" href="registrar.html">
+                <li></li>Registrarse
+            </a>
+            <a href="contacto.html">
+                <li></li>Contacto
+            </a>
+        </ul>
+        <div class="icons">
+            <a href="#" data-pushbar-target="pushbar-carrito"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html"><i class="fas fa-user"></i></a>
+            <span>NOMBRE</span>
+        </div>
+    </nav>
+    <div class="espacio" style="height: 10px;"></div>
+    <main class="main">
+        <div class="box">
+            <div class="form-container">
+
+                <h1 class="title" data-text="REGISTRATE PARA VER NUESTROS DISEÑOS EXCLUSIVOS">REGISTRATE PARA VER NUESTROS DISEÑOS EXCLUSIVOS</h1>
+
+                <div class="espacio" style="height: 100px;"></div>
+
+                <form action="../controladores/reglog.php" method="post" class="form">
+                    <ul>
+                        <li><label for="name">NOMBRE: </label> <input type="text" name="name" placeholder="Tu nombre (uno)" /></li>
+                        <li><label for="surname ">APELLIDOS: </label> <input type="text" name="surname" placeholder="Tus apellidos" /></li>
+                        <li><label for="email ">CORREO: </label> <input type="email" name="email" placeholder="Tu correo" /></li>
+                        <li><label for="pass ">CONTRASEÑA: </label> <input type="password" name="password" /></li>
+                    </ul>
+                    <br>
+                    <button type="submit" name="boton" class="button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="footer ">
+        <div class="footer__empresa ">
+            <div class="nosotros ">
+                <h3>Nosotros</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium delectus vel dignissimos. Quo, at? Pariatur et cum maiores incidunt!.</p>
+                <div class="sociales ">
+                    <a href="# "><i class="fab fa-facebook "></i></a>
+                    <a href="# "><i class="fab fa-instagram "></i></a>
+                    <a href="# "><i class="fab fa-youtube "></i></a>
+                </div>
+            </div>
+            <div class="contacto ">
+                <h3>Contacto</h3>
+                <p>Direccion de la empresa lt10</p>
+                <p><i class="fas fa-phone "></i>(01)987-1234</p>
+                <p><i class="far fa-envelope "></i>correo@gmail.com</p>
+                <p><i class="fas fa-link "></i>www.gruincasas.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/022b0abea9.js " crossorigin="anonymous "></script>
+    
+</body>
+
+</html>

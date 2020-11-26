@@ -32,6 +32,11 @@ main {
     padding: 0 1.5em;
 }
 
+.main {
+    min-height: calc(100vh - 230px);
+    padding-top: 80px;
+}
+
 .content {
     max-width: 850px;
     margin-left: auto;
@@ -113,6 +118,7 @@ main {
 
 .contact-wrapper {
     position: relative;
+    margin-top: 20px;
 }
 
 .contact-wrapper:before {

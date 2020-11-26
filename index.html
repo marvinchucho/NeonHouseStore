@@ -4,73 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/index.css">
+    <title>Inicio</title>
     <link rel="stylesheet" href="public/css/shared/navbar.css">
     <link rel="stylesheet" href="public/css/shared/footer.css">
-    <title>Registrate</title>
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="brand">
-                    <img src="public/images/logo.webp" alt="Neon House Led">
+    <nav>
+        <div class="logo"><img loading="lazy" src="../public/images/logo.webp" alt="HouseNeonLed"></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="vistas/nosotros.html">Nosotros</a></li>
+            <li><a href="vistas/tienda.html">Tienda</a></li>
+            <li><a href="vistas/personaliza.html">Personaliza</a></li>
+            <li><a href="vistas/contacto.html">Contacto</a></li>
+        </ul>
+        <div class="icons">
+            <a href="#" data-pushbar-target="pushbar-carrito"><i class="fas fa-shopping-cart"></i></a>
+            <a href="vistas/login.html"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+    </header>
+    <div class="espacio" style="height: 80px;"></div>
+    <main class="main">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/TmKh7lAwnBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card__img">
+                    <img src="public/images/index/mision.png" alt="misión">
                 </div>
-                <div class="toggle">
-                    <span class="toggle-btn"></span>
-                </div>
-                <div class="menu">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="index.html" class="menu-link">Inicio</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="vistas/nosotros.html" class="menu-link">Nosotros</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="vistas/tienda.html" class="menu-link">Tienda</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="vistas/perzonaliza.html" class="menu-link">Personaliza</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="vistas/contacto.html" class="menu-link">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="icons">
-                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="vistas/login.html"><i class="fas fa-user"></i></a>
+                <div class="card__text">
+                    <p>Brindar a nuestro clientes la mejor experiencia de compra virtual y además, ofrecerles un servicio totalmente personalizado, desde el trato hasta el producto a elección. De tal manera que consolidemos a Neon Leon Store como una empresa
+                        referente de luces led a nivel nacional ofreciendo experiencias que generen valor y tendencia en la decoración del hogar.</p>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="espacio" style="height: 80px; background-color: #000;"></div>
-    <main class="main">
-        <div class="box">
-            <div class="contenedor">
-                <br>
-                <div class="titulo">
-                    <h1>REGISTRATE PARA VER NUESTROS DISEÑOS EXCLUSIVOS</h1>
+            <div class="card">
+                <div class="card__img">
+                    <img src="public/images/index/vision.png" alt="visión">
                 </div>
-                <br>
-                <form action=" " class="form ">
-                    <ul>
-                        <li><label for="name">NOMBRE: </label> <input type="text" name="name" placeholder="Tu nombre" required /></li>
-                        <li><label for="surname ">APELLIDOS: </label> <input type="text" name="surname" placeholder="Tus apellidos" required /></li>
-                        <li><label for="email ">CORREO: </label> <input type="email" name="email" placeholder="Tu correo" required /></li>
-                        <li><label for="pass ">CONTRASEÑA: </label> <input type="password " name="password" required /></li>
-                    </ul>
-                    <br>
-                    <button type="submit " class="button ">Enviar</button>
-                </form>
+                <div class="card__text">
+                    <p>Posicionarnos como una empresa nacional reconocida en su categoría, a través de los diseños personalizados que ofrecemos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="public/images/index/valores.png" alt="valores">
+                </div>
+                <div class="card__text">
+                    <p>Responsabilidad, exactitud, compromiso, rapidez, veracidad, calidad, innovación y empatía, cualidades las cuales nos representan como una marca transparente y capaz de ofrecer un servicio A1 a todos nuestros clientes y futuros clientes.</p>
+                </div>
             </div>
         </div>
     </main>
 
+    <!--SIDEBAR CARRITO-->
 
+    <div data-pushbar-id="pushbar-carrito" class="pushbar-carrito" data-pushbar-direction="right">
+        <h2>CARRITO DE COMPRA</h2>
+        <div class="contenido">
+            <div class="producto">
+                <img src="../public/images/card.png">
+                <div class="detalle">
+                    <p>precio: S/100.00</p>
+                    <p>cantidad:</p>
+                    <input type="number" value="1">
+                </div>
+            </div>
+            <div class="producto">
+                <img src="../public/images/card.png">
+                <div class="detalle">
+                    <p>precio: S/100.00</p>
+                    <p>cantidad:</p>
+                    <input type="number" value="1">
+                </div>
+            </div>
+            <div class="producto">
+                <img src="../public/images/card.png">
+                <div class="detalle">
+                    <p>precio: S/100.00</p>
+                    <p>cantidad:</p>
+                    <input type="number" value="1">
+                </div>
+            </div>
+            <div class="producto">
+                <img src="../public/images/card.png">
+                <div class="detalle">
+                    <p>precio: S/100.00</p>
+                    <p>cantidad:</p>
+                    <input type="number" value="1">
+                </div>
+            </div>
+        </div>
+        <footer class="footer ">
+            <div class="footer__empresa ">
+                <div class="nosotros ">
+                    <h3>Nosotros</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium delectus vel dignissimos. Quo, at? Pariatur et cum maiores incidunt!.</p>
+                    <div class="sociales ">
+                        <a href="# "><i class="fab fa-facebook "></i></a>
+                        <a href="# "><i class="fab fa-instagram "></i></a>
+                        <a href="# "><i class="fab fa-youtube "></i></a>
+                    </div>
+                </div>
+                <div class="contacto ">
+                    <h3>Contacto</h3>
+                    <p>Direccion de la empresa lt10</p>
+                    <p><i class="fas fa-phone "></i>(01)987-1234</p>
+                    <p><i class="far fa-envelope "></i>correo@gmail.com</p>
+                    <p><i class="fas fa-link "></i>www.gruincasas.com</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 
+    <!--FOOTER-->
     <footer class="footer ">
         <div class="footer__empresa ">
             <div class="nosotros ">
@@ -92,8 +145,14 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
     <script src="https://kit.fontawesome.com/022b0abea9.js " crossorigin="anonymous "></script>
-    <script src="public/js/navbar.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/perzonaliza.css">
+    <link rel="stylesheet" href="../public/css/personaliza.css">
     <link rel="stylesheet" href="../public/css/shared/navbar.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
     <title>PERZONALIZA</title>
@@ -12,29 +12,26 @@
 
 <body>
     <nav>
-        <div class="logo"><img src="../public/images/logo.webp"></div>
+        <div class="logo"><img loading="lazy" src="../public/images/logo.webp" alt="HouseNeonLed"></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
         <ul>
-            <a href="#">
-                <li></li>Inicio</a>
-            <a href="./nosotros.html">
-                <li></li>Nosotros</a>
-            <a href="./tienda.html">
-                <li></li>Tienda</a>
-            <a href="./perzonaliza.html">
-                <li></li>Personaliza</a>
-            <a href="./contacto.html">
-                <li></li>Contacto</a>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="vistas/tienda.html">Tienda</a></li>
+            <li><a href="./personaliza.html">Personaliza</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
         <div class="icons">
             <a href="#" data-pushbar-target="pushbar-carrito"><i class="fas fa-shopping-cart"></i></a>
-            <a href="login.html"><i class="fas fa-user"></i></a>
-            <span>NOMBRE</span>
+            <a href="./login.html"><i class="fas fa-user"></i></a>
         </div>
     </nav>
-    <div class="espacio " style="height: 80px; background-color: #000;"></div>
-    <main>
+    </header>
+    <div class="espacio" style="height: 80px;"></div>
+    <main class="main">
         <div class="content">
-            <h1 class="title">PERZONALIZA TU DISEÑO</h1>
+            <h1 class="title">PERSONALIZA TU DISEÑO</h1>
 
             <div class="contact-wrapper">
 
@@ -44,9 +41,9 @@
                             <label for="opciones">¿Qué es lo que desea personalizar?</label>
                             <select name="" id="opciones">
                                 <option value="0">Logo / Frase / Otros</option>
-                                <option value="">Logo</option>
-                                <option value="">Frases</option>
-                                <option value="">Otros</option>
+                                <option value="imagen">Imagen</option>
+                                <option value="frases">Frases</option>
+                                <option value="otros">Otros</option>
                             </select>
                         </p>
                         <p>
@@ -67,7 +64,6 @@
             </div>
         </div>
     </main>
-    <div class="espacio " style="height: 100px;"></div>
     <footer class="footer ">
         <div class="footer__empresa ">
             <div class="nosotros ">
@@ -88,8 +84,15 @@
             </div>
         </div>
     </footer>
-    <script src="../public/js/navbar.js"></script>
-    <script src="https://kit.fontawesome.com/022b0abea9.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/022b0abea9.js " crossorigin="anonymous "></script>
 </body>
 
 </html>
