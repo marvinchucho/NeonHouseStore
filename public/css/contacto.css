@@ -45,10 +45,6 @@
         text-shadow: 0 0 20px #ff005b;
     }
     
-    .contact-wrapper {
-        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0);
-    }
-    
     .contact-wrapper>* {
         padding: 1em;
     }
@@ -87,18 +83,34 @@
     }
     
     .contact-form form button {
-        background: #b70e21;
-        border: 0;
-        text-transform: uppercase;
-        padding: 1em;
+        position: relative;
+        width: 100%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 5px;
+        font-family: Comfortaa-Light;
+        background: #111;
+        color: white;
+        height: 60px;
+        border-top: 2px solid #b70e21;
+        border-bottom: 2px solid #5d02ff;
+        box-sizing: border-box;
+        background-position: 0 0, 100% 0;
+        background-repeat: no-repeat;
+        background-size: 2px 100%;
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+        background-image: -webkit-linear-gradient(top, #b70e21 0%, #5d02ff 100%), -webkit-linear-gradient(top, #b70e21 0%, #5d02ff 100%);
+        background-image: -moz-linear-gradient(top, #b70e21 0%, #5d02ff 100%), -moz-linear-gradient(top, #b70e21 0%, #5d02ff 100%);
+        background-image: -o-linear-gradient(top, #b70e21 0%, #5d02ff 100%), -o-linear-gradient(top, #b70e21 0%, #5d02ff 100%);
+        background-image: linear-gradient(to bottom, #b70e21 0%, #5d02ff 100%), linear-gradient(to bottom, #b70e21 0%, #5d02ff 100%);
+        transition: 1.5s;
     }
     
-    .contact-form form button:hover,
-    .contact-form form button:focus {
-        background: #d63031;
-        color: #000;
-        transition: background-color 1s ease-out;
-        outline: 0;
+    .contact-form form button:hover {
+        box-shadow: 0 2px 5px 0 #e91e63 inset, 0 2px 5px 0 #e91e63, 0 5px 50px 0 #e91e63 inset, 0 5px 50px 0 #e91e63;
+        border-bottom: 2px solid #e91e63;
     }
     
     .contact-info {
@@ -126,6 +138,40 @@
         padding: .3em;
         font-family: 'Comfortaa-Light';
     }
+    /*Glowing effect*/
+    
+    .contact-wrapper {
+        position: relative;
+    }
+    
+    .contact-wrapper:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: #fff;
+        z-index: -1;
+    }
+    
+    .contact-wrapper:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: #fff;
+        z-index: -2;
+        filter: blur(40px);
+    }
+    
+    .contact-wrapper:before,
+    .contact-wrapper:after {
+        background: linear-gradient(235deg, #e91e63, #060c21, #5d02ff);
+    }
+    /*End of Glowing effect*/
     
     @media (min-width: 700px) {
         main {

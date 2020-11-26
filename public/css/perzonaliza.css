@@ -22,6 +22,7 @@
 }
 
 body {
+    min-height: 100vh;
     background: #181818;
 }
 
@@ -42,11 +43,7 @@ main {
     text-align: center;
     font-size: 3em;
     font-family: Comfortaa-Regular;
-    text-shadow: 0 0 20px #ff005b;
-}
-
-.contact-wrapper {
-    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0);
+    text-shadow: 0 0 20px #00bcd4;
 }
 
 .contact-wrapper>* {
@@ -54,7 +51,7 @@ main {
 }
 
 .contact-form {
-    background: rgb(14, 14, 14);
+    background: #0E0E0E;
 }
 
 .contact-form form .block {
@@ -66,7 +63,6 @@ main {
     padding: 1em;
 }
 
-.contact-form form button,
 .contact-form form select,
 .contact-form form input,
 .contact-form form textarea {
@@ -78,23 +74,77 @@ main {
     color: #fff;
 }
 
-.contact-form form button {
-    background: #b70e21;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-}
-
-.contact-form form button:hover,
-.contact-form form button:focus {
-    background: #d63031;
-    transition: background-color 1s ease-out;
-    outline: 0;
-}
-
 .contact-form label {
     font-family: Comfortaa-Light;
 }
+
+.contact-form form button {
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: Comfortaa-Light;
+    background: #111;
+    color: white;
+    height: 60px;
+    border-top: 2px solid #3ACFD5;
+    border-bottom: 2px solid #3a4ed5;
+    box-sizing: border-box;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    background-size: 2px 100%;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+    background-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+    background-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+    background-image: -o-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -o-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+    background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%), linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+    transition: 1.5s;
+}
+
+.contact-form form button:hover {
+    box-shadow: 0 2px 5px 0 #3acfd5 inset, 0 2px 5px 0 #3a4ed5, 0 5px 50px 0 #3a4ed5 inset, 0 5px 50px 0 #3a4ed5;
+}
+
+
+/*Glowing effect*/
+
+.contact-wrapper {
+    position: relative;
+}
+
+.contact-wrapper:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.contact-wrapper:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.contact-wrapper:before,
+.contact-wrapper:after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+
+/*End of Glowing effect*/
 
 @media (min-width: 700px) {
     main {
