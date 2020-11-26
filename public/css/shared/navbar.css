@@ -27,14 +27,6 @@ body {
     outline-style: none;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-}
-
 nav {
     display: flex;
     height: 80px;
@@ -54,10 +46,12 @@ nav .logo img {
 }
 
 nav ul {
+    width: 80%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
 }
 
 nav .icons i {

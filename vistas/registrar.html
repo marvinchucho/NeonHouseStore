@@ -7,33 +7,25 @@
     <link rel="stylesheet" href="../public/css/registrar.css">
     <link rel="stylesheet" href="../public/css/shared/navbar.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
     <title>Regístrate</title>
 </head>
 
 <body>
     <nav>
-        <div class="logo"><img src="../public/images/logo.webp"></div>
+        <div class="logo"><img loading="lazy" src="../public/images/logo.webp" alt="HouseNeonLed"></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
         <ul>
-            <a href="../index.html">
-                <li></li>Inicio
-            </a>
-            <a href="tienda.html">
-                <li></li>Tienda
-            </a>
-            <a href="personaliza.html">
-                <li></li>Personalizar
-            </a>
-            <a class="active" href="registrar.html">
-                <li></li>Registrarse
-            </a>
-            <a href="contacto.html">
-                <li></li>Contacto
-            </a>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./tienda.html">Tienda</a></li>
+            <li><a href="./personaliza.html">Personaliza</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
         <div class="icons">
             <a href="#" data-pushbar-target="pushbar-carrito"><i class="fas fa-shopping-cart"></i></a>
-            <a href="login.html"><i class="fas fa-user"></i></a>
-            <span>NOMBRE</span>
+            <a href="./login.html"><i class="fas fa-user"></i></a>
         </div>
     </nav>
     <div class="espacio" style="height: 10px;"></div>
@@ -81,9 +73,35 @@
             </div>
         </div>
     </footer>
+    <!--SIDEBAR CARRITO-->
 
+    <div data-pushbar-id="pushbar-carrito" class="pushbar-carrito" data-pushbar-direction="right">
+        <h2>CARRITO DE COMPRA</h2>
+        <div class="contenido">
+            <div class="producto">
+                <img src="../public/images/card.png">
+                <div class="detalle">
+                    <p>precio: S/100.00</p>
+                    <p>cantidad:</p>
+                    <input type="number" value="1">
+                </div>
+            </div>
+        </div>
+        <div class="botones">
+            <a class="btn-carrito" href="#">COMPRAR AHORA</a>
+        </div>
+    </div>
+    <!--SIDEBAR CARRITO-->
+
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
     <script src="https://kit.fontawesome.com/022b0abea9.js " crossorigin="anonymous "></script>
-    
+
 </body>
 
 </html>
