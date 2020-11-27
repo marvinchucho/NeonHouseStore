@@ -15,7 +15,7 @@ body {
 
 .main {
     width: 100%;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,3 +154,37 @@ body {
 
 
 /*------------------------*/
+
+@media(max-width: 900px) {
+    .main .tarjeta {
+        display: flex;
+        width: 90%;
+        min-height: 500px;
+        border-radius: 25px;
+        /*background: #0C0A0F;*/
+        box-shadow: 0px 0px 20px rgba(19, 108, 165, 1);
+    }
+}
+
+@media(max-width: 600px) {
+    .main .tarjeta {
+        flex-direction: column;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+    .main .tarjeta__imagen,
+    .main .tarjeta__detalle {
+        width: 100%;
+    }
+    .main .tarjeta__imagen {
+        padding: 10px;
+        height: 40%;
+    }
+    .main .tarjeta__detalle {
+        height: 60%;
+        padding: 10px;
+    }
+    .main .eleccion {
+        align-items: center;
+    }
+}
