@@ -51,6 +51,15 @@ main {
     text-shadow: 0 0 20px #ffc107;
 }
 
+.sub-title {
+    padding: 1em;
+    border-bottom: 2px solid #ffc107;
+}
+
+.sub-title h2 {
+    font-family: Comfortaa-Regular;
+}
+
 .contact-wrapper>* {
     padding: 1em;
 }
@@ -151,6 +160,17 @@ main {
 
 
 /*End of Glowing effect*/
+
+.link {
+    text-align: center;
+    font-size: 20px;
+    font-family: Comfortaa-Light;
+}
+
+.link a {
+    color: #ffc107;
+    font-family: Comfortaa-Light;
+}
 
 @media (min-width: 700px) {
     main {

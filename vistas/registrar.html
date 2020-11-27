@@ -12,55 +12,63 @@
 
 <body>
     <nav>
-        <div class="logo"><img src="../public/images/logo.webp"></div>
+        <div class="logo"><img loading="lazy" src="../public/images/logo.webp" alt="HouseNeonLed"></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
         <ul>
-            <a href="../index.html">
-                <li></li>Inicio
-            </a>
-            <a href="tienda.html">
-                <li></li>Tienda
-            </a>
-            <a href="personaliza.html">
-                <li></li>Personalizar
-            </a>
-            <a class="active" href="registrar.html">
-                <li></li>Registrarse
-            </a>
-            <a href="contacto.html">
-                <li></li>Contacto
-            </a>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="vistas/tienda.html">Tienda</a></li>
+            <li><a href="./personaliza.html">Personaliza</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
         <div class="icons">
             <a href="#" data-pushbar-target="pushbar-carrito"><i class="fas fa-shopping-cart"></i></a>
-            <a href="login.html"><i class="fas fa-user"></i></a>
-            <span>NOMBRE</span>
+            <a href="./login.html"><i class="fas fa-user"></i></a>
         </div>
     </nav>
-    <div class="espacio" style="height: 10px;"></div>
+    </header>
+    <div class="espacio" style="height: 80px;"></div>
     <main class="main">
-        <div class="box">
-            <div class="form-container">
+        <div class="content">
 
-                <h1 class="title" data-text="REGISTRATE PARA VER NUESTROS DISEÑOS EXCLUSIVOS">REGISTRATE PARA VER NUESTROS DISEÑOS EXCLUSIVOS</h1>
+            <div class="contact-wrapper">
 
-                <div class="espacio" style="height: 100px;"></div>
-
-                <form action="../controladores/reglog.php" method="post" class="form">
-                    <ul>
-                        <li><label for="name">NOMBRE: </label> <input type="text" name="name" placeholder="Tu nombre (uno)" /></li>
-                        <li><label for="surname ">APELLIDOS: </label> <input type="text" name="surname" placeholder="Tus apellidos" /></li>
-                        <li><label for="email ">CORREO: </label> <input type="email" name="email" placeholder="Tu correo" /></li>
-                        <li><label for="pass ">CONTRASEÑA: </label> <input type="password" name="password" /></li>
-                    </ul>
-                    <br>
-                    <button type="submit" name="boton" class="button">Enviar</button>
-                </form>
+                <div class="contact-form">
+                    <div class="sub-title">
+                        <h2>Registrate con Neon House Store</h2>
+                    </div>
+                    <form action="">
+                        <p>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name">
+                        </p>
+                        <p>
+                            <label for="last">Apellido</label>
+                            <input type="text" name="last" id="last">
+                        </p>
+                        <p>
+                            <label for="email">Correo</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+                        <p class="block">
+                            <label for="pass">Contraseña</label>
+                            <input type="password" name="pass" id="pass">
+                        </p>
+                        <p class="block">
+                            <button type="submit">
+                                Registrar
+                            </button>
+                        </p>
+                        <p class="link">
+                            ¿Ya tienes una cuenta? <a href="./login.html">Inicia sesión aquí</a>
+                        </p>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
-
-
-
+    <!--FOOTER-->
     <footer class="footer ">
         <div class="footer__empresa ">
             <div class="nosotros ">
@@ -82,8 +90,16 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
     <script src="https://kit.fontawesome.com/022b0abea9.js " crossorigin="anonymous "></script>
-    
+
+
 </body>
 
 </html>
