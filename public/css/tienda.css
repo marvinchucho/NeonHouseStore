@@ -27,11 +27,29 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
+    overflow-y: scroll;
+}
+
+.main .sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.main .sidebar::-webkit-scrollbar-thumb {
+    background: #8615d14d;
+    box-shadow: 0px 0px 20px rgba(134, 21, 209, 0.302);
+    border-radius: 5px;
 }
 
 .main .sidebar .categorias {
     display: flex;
     flex-direction: column;
+}
+
+.main .sidebar .categorias .cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main .sidebar h2 {
@@ -125,7 +143,7 @@
     }
     .main .sidebar {
         width: 100%;
-        height: 90px;
+        height: 120px;
         display: flex;
         padding: 10px 20px;
     }
@@ -133,6 +151,18 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+    .main .sidebar .categorias .cat {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .main .sidebar .categorias .cat a {
+        width: 80px;
+        margin: 10px;
     }
     .main .principal .contenido {
         width: 100%;
